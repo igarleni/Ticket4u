@@ -1,11 +1,19 @@
 package ticket4u;
 
+import java.util.ArrayList;
+
 public class ListaEventos {
-    private final Evento [] listaEventos;
-    public static void addEvento(){
+    private ArrayList<Evento> listaEventos;
 
+    public ListaEventos() {
+        listaEventos = new ArrayList<>();
     }
-    public static void deleteEvento(){
 
+    public  void addEvento(Evento evento) {
+        listaEventos.add(evento);
+    }
+
+    public void deleteEvento(Evento evento){
+        listaEventos.remove(evento);
     }
 }

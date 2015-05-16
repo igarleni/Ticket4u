@@ -1,9 +1,10 @@
 package ticket4u;
 
 public class MotorBusqueda {
-    private final ListaEventos listaEventos;
-    public static void buscar(){
 
+    public static ListaEventos buscar(ListaEventos listaEventos, String criterioBusqueda){
+        ListaEventos resultado = new ListaEventos();
+        return resultado;
     }
 
 }
