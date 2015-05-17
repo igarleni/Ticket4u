@@ -6,4 +6,9 @@ public class Resultado {
     public Resultado(ListaEventos listaEventos) {
         this.listaEventos = listaEventos;
     }
+
+    public ListaEventos getListaEventos() {
+        return listaEventos;
+    }
+    
 }

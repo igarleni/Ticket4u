@@ -3,25 +3,32 @@ package ticket4u;
 import java.util.Date;
 
 public class Oferta {
-    private final Date fechaInicio;
-    private final Date fechaCaducidad;
-    private final Evento evento;
-    private final int id;
+    private Date fechaCaducidad;
+    private static int idSeed = 0;
+    private final int idOferta;
+    private double descuento;
 
-    public Oferta(Date fechaInicio, Date fechaCaducidad, Evento evento, int id) {
-        this.fechaInicio = fechaInicio;
+    public Oferta(Date fechaCaducidad, double descuento) {
+        idOferta = idSeed;
+        idSeed++;
         this.fechaCaducidad = fechaCaducidad;
-        this.evento = evento;
-        this.id = id;
+        this.descuento = descuento;
     }
 
-    public void modificarOferta(){
-
+    public void modificarOferta(Date fechaInicio, Date fechaCaducidad, double descuento){
+        this.fechaCaducidad = fechaCaducidad;
+        this.descuento = descuento;
     }
-    public void addOferta(){
-
+    
+    public double getDescuento() {
+        return descuento;
     }
-    public void eliminarOferta(){
 
+    public Date getFechaCaducidad() {
+        return fechaCaducidad;
+    }
+
+    public int getIdOferta() {
+        return idOferta;
     }
 }

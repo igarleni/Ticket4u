@@ -1,15 +1,15 @@
 package ticket4u;
 
-public class PagoTarjetaCredito {
+public class CuentaTarjetaCredito implements CuentaBancaria{
     private final int idTarjeta;
     private final int codigoSeguridad;
 
-    public PagoTarjetaCredito(int idTarjeta, int codigoSeguridad) {
+    public CuentaTarjetaCredito(int idTarjeta, int codigoSeguridad) {
         this.idTarjeta = idTarjeta;
         this.codigoSeguridad = codigoSeguridad;
     }
 
-    public static void realizarPago(){
-
+    public void realizarCobro(double precio){
+        
     }
 }
