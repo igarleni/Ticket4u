@@ -1,6 +1,6 @@
 package ticket4u;
 
-public interface CuentaBancaria {
+public interface Pago {
     
     public void realizarCobro(double precio);
 }

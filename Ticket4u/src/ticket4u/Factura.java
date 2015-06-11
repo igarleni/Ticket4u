@@ -7,9 +7,9 @@ public class Factura {
     private static int idSeed = 0;
     private final int idFactura;
     private final Usuario usuario;
-    private final CuentaBancaria pago;
+    private final Pago pago;
 
-    public Factura(double precio, Usuario usuario, CuentaBancaria pago) {
+    public Factura(double precio, Usuario usuario, Pago pago) {
         this.usuario = usuario;
         idFactura = idSeed;
         idSeed ++;

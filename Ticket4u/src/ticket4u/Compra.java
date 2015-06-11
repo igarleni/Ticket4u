@@ -69,7 +69,7 @@ public class Compra {
     
     public Factura pagar(){
         if (pagoRealizado) return null;
-        CuentaBancaria cuentaBancaria = usuario.getCuentaBancaria();
+        Pago cuentaBancaria = usuario.getCuentaBancaria();
         cuentaBancaria.realizarCobro(getPrecioTotal());
         factura = new Factura(getPrecioTotal(), usuario, cuentaBancaria);
         pagoRealizado = true;

@@ -15,9 +15,9 @@ public class Usuario {
     private String usuario;
     private String pass;
     private String email;
-    private CuentaBancaria cuentaBancaria;
+    private Pago cuentaBancaria;
 
-    public Usuario(String nombre, String apellidos, String calle, String ciudad, String pais, Date fechaNacimiento, int telefono, String usuario, String pass, String email, CuentaBancaria cuentaBancaria) {
+    public Usuario(String nombre, String apellidos, String calle, String ciudad, String pais, Date fechaNacimiento, int telefono, String usuario, String pass, String email, Pago cuentaBancaria) {
         idUsuario = idSeed;
         idSeed++;
         this.nombre = nombre;
@@ -33,7 +33,7 @@ public class Usuario {
         this.cuentaBancaria = cuentaBancaria;
     }
 
-    public void modificarCuenta(String nombre, String apellidos, String calle, String ciudad, String pais, Date fechaNacimiento, int telefono, String usuario, String pass, String email, CuentaBancaria cuentaBancaria){
+    public void modificarCuenta(String nombre, String apellidos, String calle, String ciudad, String pais, Date fechaNacimiento, int telefono, String usuario, String pass, String email, Pago cuentaBancaria){
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.calle = calle;
@@ -51,7 +51,7 @@ public class Usuario {
         return idUsuario;
     }
 
-    public CuentaBancaria getCuentaBancaria() {
+    public Pago getCuentaBancaria() {
         return cuentaBancaria;
     }
     

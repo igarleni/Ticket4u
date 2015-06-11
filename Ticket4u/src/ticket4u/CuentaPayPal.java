@@ -1,6 +1,6 @@
 package ticket4u;
 
-public class CuentaPayPal implements CuentaBancaria{
+public class CuentaPayPal implements Pago{
     private final int idCuenta;
 
     public CuentaPayPal(int idCuenta) {

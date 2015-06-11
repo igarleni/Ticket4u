@@ -26,6 +26,17 @@ public class Audicion {
         }
     }
 
+    public Butaca ocuparButaca(){
+        for (int i = 0; i < listaButacas.length; i++) {
+            Butaca butaca = listaButacas[i];
+            if(butaca.getEstadoButaca() == true){
+                butaca.setEstadoButaca(false);
+                return butaca;
+            }
+        }
+        return null;
+    }
+
     public int getIdAudicion() {
         return idAudicion;
     }
